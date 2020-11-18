@@ -53,3 +53,15 @@ grav_std <- calc_earthtide(utc = tms,
                            method = 'gravity',
                            latitude = 52.3868,
                            longitude = 9.7144)
+
+# Spiekeroog
+tms <- as.POSIXct("2020-11-18", tz = "UTC") + 0:(24*31) * 3600
+grav_std <- calc_earthtide(utc = tms,
+                           do_predict = TRUE,
+                           method = c('tidal_potential', 'lod_tide', 'pole_tide'),
+                           latitude = 53.7492,
+                           longitude = 7.6819)
+
+# Unfortunately there is no HW/LW calculation.
+
+# World Tides seem to be e great choice for a non budget option (including API)
