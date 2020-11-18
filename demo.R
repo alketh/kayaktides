@@ -65,3 +65,5 @@ grav_std <- calc_earthtide(utc = tms,
 # Unfortunately there is no HW/LW calculation.
 
 # World Tides seem to be e great choice for a non budget option (including API)
+
+# tide-forecast.com is a very potent low-budget option.
